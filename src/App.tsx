@@ -50,7 +50,7 @@ function App() {
 
   // Connect to the socket server
   useEffect(() => {
-    const newSocket = io('http://localhost:3001');
+    const newSocket = io('https://chat-backend-kiqg.onrender.com');
     
     newSocket.on('connect', () => {
       setSocket(newSocket);
